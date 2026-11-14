@@ -1,0 +1,18 @@
+[project]
+name = "mcp-knowledge-base"
+version = "0.1.0"
+description = "A Markdown knowledge base served by Zensical and MCP"
+requires-python = ">=3.11"
+dependencies = [
+  "mcp>=2,<3",
+  "zensical>=0.1,<1",
+]
+
+[dependency-groups]
+dev = [
+  "pytest>=8,<9",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

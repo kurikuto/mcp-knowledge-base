@@ -1,0 +1,24 @@
+[project]
+site_name = "MCP Knowledge Base"
+site_description = "Obsidian で育てる MCP 実装ナレッジ"
+# GitHub Pages の URL に変更してください。
+site_url = "https://YOUR_GITHUB_USER.github.io/YOUR_REPOSITORY/"
+docs_dir = "docs"
+nav = [
+  { "ホーム" = "index.md" },
+  { "MCP" = [
+    "mcp/index.md",
+    "mcp/concepts.md",
+    "mcp/python-sdk-v2.md",
+    "mcp/troubleshooting.md",
+  ] },
+  { "日々のノート" = ["notes/2026/11/12.md"] },
+]
+
+[project.theme]
+features = [
+  "navigation.instant",
+  "navigation.instant.progress",
+  "navigation.path",
+  "navigation.top",
+]
